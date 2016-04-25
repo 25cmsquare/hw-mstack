@@ -843,8 +843,8 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <wire x1="0" y1="-1.905" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
 <text x="-6.35" y="3.175" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="1" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
 <wire x1="0" y1="1.905" x2="0" y2="5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="-1.905" x2="0" y2="-5.08" width="0.254" layer="94"/>
 </symbol>
@@ -1275,7 +1275,7 @@ Ultrahigh PSRR RF Linear Regulator</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="KSR2XYG">
+<deviceset name="KSR2XYG" prefix="SW">
 <description>&lt;b&gt;KSR Series&lt;/b&gt;&lt;p&gt;
 Subminiature Tact Switch for SMT</description>
 <gates>
