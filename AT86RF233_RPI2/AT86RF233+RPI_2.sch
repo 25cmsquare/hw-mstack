@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -135,10 +135,13 @@
 <library name="25cmsquare">
 <packages>
 <package name="ATZB-RF-233-1-C">
-<wire x1="-10" y1="12.5" x2="10" y2="12.5" width="0.1524" layer="21"/>
-<wire x1="10" y1="12.5" x2="10" y2="-12.5" width="0.1524" layer="21"/>
+<wire x1="-10" y1="12.5" x2="-4.0894" y2="12.5" width="0.1524" layer="21"/>
+<wire x1="4.064" y1="12.5" x2="10" y2="12.5" width="0.1524" layer="21"/>
+<wire x1="10" y1="12.5" x2="10" y2="12.192" width="0.1524" layer="21"/>
+<wire x1="10" y1="-5.0038" x2="10" y2="-12.5" width="0.1524" layer="21"/>
 <wire x1="10" y1="-12.5" x2="-10" y2="-12.5" width="0.1524" layer="21"/>
-<wire x1="-10" y1="-12.5" x2="-10" y2="12.5" width="0.1524" layer="21"/>
+<wire x1="-10" y1="-12.5" x2="-10" y2="-5.08" width="0.1524" layer="21"/>
+<wire x1="-10" y1="12.192" x2="-10" y2="12.5" width="0.1524" layer="21"/>
 <smd name="26" x="-10" y="11.6" dx="1.7" dy="0.7" layer="1"/>
 <smd name="27" x="-10" y="10.6" dx="1.7" dy="0.7" layer="1"/>
 <smd name="28" x="-10" y="9.6" dx="1.7" dy="0.7" layer="1"/>
@@ -9730,7 +9733,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <attribute name="VALUE" x="87.884" y="140.081" size="1.778" layer="96"/>
 </instance>
 <instance part="GND1" gate="1" x="83.82" y="132.08"/>
-<instance part="JP1" gate="G$1" x="99.06" y="157.48" rot="R90"/>
+<instance part="JP1" gate="G$1" x="27.94" y="157.48" rot="R90"/>
 <instance part="GND2" gate="1" x="38.1" y="40.64"/>
 <instance part="GND3" gate="1" x="106.68" y="40.64"/>
 <instance part="JP2" gate="A" x="149.86" y="93.98"/>
@@ -9751,9 +9754,9 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <nets>
 <net name="VCC_3V3" class="0">
 <segment>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="154.94" x2="27.94" y2="154.94" width="0.1524" layer="91"/>
-<label x="27.94" y="154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="25.4" y1="154.94" x2="17.78" y2="154.94" width="0.1524" layer="91"/>
+<label x="17.78" y="154.94" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="3"/>
@@ -9811,26 +9814,19 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="VCC_ATZB_3V3" class="0">
 <segment>
+<label x="114.3" y="154.94" size="1.778" layer="95" xref="yes"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="154.94" x2="66.04" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="154.94" x2="83.82" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="154.94" x2="96.52" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="149.86" x2="66.04" y2="154.94" width="0.1524" layer="91"/>
 <junction x="66.04" y="154.94"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="149.86" x2="83.82" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="154.94" x2="114.3" y2="154.94" width="0.1524" layer="91"/>
 <junction x="83.82" y="154.94"/>
-</segment>
-</net>
-<net name="VCC_ATZB_3V3" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="154.94" x2="114.3" y2="154.94" width="0.1524" layer="91"/>
-<label x="114.3" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VDDB"/>
@@ -9957,6 +9953,13 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="124.46" x2="205.74" y2="127" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="154.94" x2="40.64" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
