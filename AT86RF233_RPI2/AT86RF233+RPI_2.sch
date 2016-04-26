@@ -186,6 +186,18 @@
 <smd name="18" x="3.5" y="12.5" dx="1.7" dy="0.7" layer="1" rot="R90"/>
 <text x="5" y="14" size="1.016" layer="21" font="vector" ratio="15">&gt;NAME</text>
 <text x="5" y="-15" size="1.016" layer="21" font="vector" ratio="15">&gt;VALUE</text>
+<polygon width="0.127" layer="41">
+<vertex x="-6" y="-4.8"/>
+<vertex x="15.5" y="-4.8"/>
+<vertex x="15.5" y="-12.5"/>
+<vertex x="-6" y="-12.5"/>
+</polygon>
+<polygon width="0.127" layer="42">
+<vertex x="-6" y="-4.8"/>
+<vertex x="15.5" y="-4.8"/>
+<vertex x="15.5" y="-12.5"/>
+<vertex x="-6" y="-12.5"/>
+</polygon>
 </package>
 <package name="L0805">
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
