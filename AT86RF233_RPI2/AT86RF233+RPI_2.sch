@@ -229,6 +229,8 @@
 <wire x1="-0.9" y1="6.5" x2="-2" y2="6.5" width="0.127" layer="21"/>
 <wire x1="-2" y1="6.5" x2="-2" y2="0.5" width="0.127" layer="21"/>
 <circle x="0" y="3.5" radius="1" width="0.127" layer="21"/>
+<text x="2.54" y="3.81" size="1.016" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<text x="2.54" y="2.54" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -9716,7 +9718,7 @@ type RDH, grid 15 mm</description>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603K" value="4n7, 0603"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="SW1" library="25cmsquare" deviceset="KSR2XYG" device=""/>
+<part name="RESET" library="25cmsquare" deviceset="KSR2XYG" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9759,7 +9761,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <attribute name="VALUE" x="227.584" y="124.841" size="1.778" layer="96"/>
 </instance>
 <instance part="GND7" gate="1" x="223.52" y="119.38"/>
-<instance part="SW1" gate="G$1" x="205.74" y="116.84"/>
+<instance part="RESET" gate="G$1" x="205.74" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -9818,7 +9820,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="205.74" y1="106.68" x2="205.74" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="2"/>
+<pinref part="RESET" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -9964,7 +9966,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="124.46" x2="205.74" y2="127" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="1"/>
+<pinref part="RESET" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$3" class="0">
