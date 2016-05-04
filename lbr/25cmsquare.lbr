@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -628,6 +628,41 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <text x="-2.104" y="1.004" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-2.112" y="-2.048" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
+<package name="SI7021">
+<smd name="3" x="-1.45" y="-1" dx="0.85" dy="0.45" layer="1" roundness="100"/>
+<smd name="2" x="-1.45" y="0" dx="0.85" dy="0.45" layer="1" roundness="100"/>
+<smd name="1" x="-1.45" y="1" dx="0.85" dy="0.45" layer="1" roundness="100"/>
+<smd name="4" x="1.45" y="-1" dx="0.85" dy="0.45" layer="1" roundness="100"/>
+<smd name="5" x="1.45" y="0" dx="0.85" dy="0.45" layer="1" roundness="100"/>
+<smd name="6" x="1.45" y="1" dx="0.85" dy="0.45" layer="1" roundness="100"/>
+<smd name="P$7" x="0" y="0" dx="1.6" dy="2.5" layer="1"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="0.6" x2="-1.5" y2="0.4" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.4" x2="-1.5" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.4" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.6" x2="1.5" y2="-0.4" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0.4" x2="1.5" y2="0.6" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.4" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<text x="-2.55" y="1.27" size="1.016" layer="21" font="vector" ratio="15">*</text>
+<text x="-2.25" y="-2.8" size="1.016" layer="21" font="vector" ratio="15">&gt;NAME</text>
+</package>
+<package name="BME1080">
+<smd name="6" x="-1.0125" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="5" x="-1.0125" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="7" x="-1.0125" y="0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="8" x="-1.0125" y="0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="4" x="1.0125" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
+<smd name="3" x="1.0125" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="2" x="1.0125" y="0.325" dx="0.5" dy="0.35" layer="1"/>
+<smd name="1" x="1.0125" y="0.975" dx="0.5" dy="0.35" layer="1"/>
+<wire x1="-1.25" y1="1.25" x2="1.25" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.25" x2="1.25" y2="-1.25" width="0.127" layer="21"/>
+<text x="1.49" y="0.73" size="1.016" layer="21" font="vector" ratio="15">*</text>
+<text x="-2.14" y="-2.59" size="1.016" layer="21" font="vector" ratio="15">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ZX62RD-AB-5P8">
@@ -940,6 +975,45 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <pin name="GNDD" x="-25.4" y="-20.32" length="middle"/>
 <text x="12.7" y="25.4" size="1.778" layer="95">&gt;NAME</text>
 <text x="12.7" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SI7021">
+<wire x1="-7.62" y1="0" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="-7.62" y2="0" width="0.254" layer="94"/>
+<pin name="VDD" x="0" y="5.08" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-20.32" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="SDA" x="12.7" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<text x="5.08" y="-17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="HDC1080">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="0" y="12.7" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="0" y="-12.7" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="SDA" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<text x="5.08" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="BME280">
+<pin name="SDI" x="22.86" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="SDO" x="22.86" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SCK" x="22.86" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="CSB" x="22.86" y="5.08" visible="pin" length="middle" rot="R180"/>
+<wire x1="17.78" y1="17.78" x2="17.78" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="17.78" x2="17.78" y2="17.78" width="0.254" layer="94"/>
+<pin name="GND" x="7.62" y="-5.08" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="VDD" x="5.08" y="22.86" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDDIO" x="10.16" y="22.86" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<text x="12.7" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="12.7" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1402,6 +1476,69 @@ http://sk.farnell.com/renata/smtu-2450n-1-lf/holder-smd-battery-for-cr-2450/dp/1
 <connect gate="G$1" pin="SLP_TR" pad="35"/>
 <connect gate="G$1" pin="VDDA" pad="3"/>
 <connect gate="G$1" pin="VDDB" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SI7021" prefix="U">
+<description>&lt;b&gt;SI7021&lt;/b&gt;
+&lt;p&gt;
+https://www.silabs.com/Support%20Documents/TechnicalDocs/Si7021-A20.pdf</description>
+<gates>
+<gate name="G$1" symbol="SI7021" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="SI7021">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HDC1080" prefix="U">
+<description>&lt;b&gt;HDC1080&lt;/b&gt;
+&lt;p&gt;
+http://www.ti.com.cn/cn/lit/ds/symlink/hdc1080.pdf</description>
+<gates>
+<gate name="G$1" symbol="HDC1080" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SI7021">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BME280" prefix="U">
+<gates>
+<gate name="G$1" symbol="BME280" x="-7.62" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="BME1080">
+<connects>
+<connect gate="G$1" pin="CSB" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1 7"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="SDI" pad="3"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VDDIO" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
