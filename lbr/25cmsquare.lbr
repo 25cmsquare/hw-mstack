@@ -663,6 +663,42 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <text x="1.49" y="0.73" size="1.016" layer="21" font="vector" ratio="15">*</text>
 <text x="-2.14" y="-2.59" size="1.016" layer="21" font="vector" ratio="15">&gt;NAME</text>
 </package>
+<package name="SHT1X">
+<smd name="4" x="-2.64" y="-1.905" dx="1.8" dy="0.8" layer="1"/>
+<smd name="3" x="-2.64" y="-0.635" dx="1.8" dy="0.8" layer="1"/>
+<smd name="2" x="-2.64" y="0.635" dx="1.8" dy="0.8" layer="1"/>
+<smd name="1" x="-2.64" y="1.905" dx="1.8" dy="0.8" layer="1"/>
+<smd name="5" x="2.64" y="-1.905" dx="1.8" dy="0.8" layer="1"/>
+<smd name="6" x="2.64" y="-0.635" dx="1.8" dy="0.8" layer="1"/>
+<smd name="7" x="2.64" y="0.635" dx="1.8" dy="0.8" layer="1"/>
+<smd name="8" x="2.64" y="1.905" dx="1.8" dy="0.8" layer="1"/>
+<wire x1="-2.5" y1="-3.735" x2="2.5" y2="-3.735" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="3.735" x2="2.5" y2="3.735" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="3.735" x2="-2.5" y2="2.55" width="0.127" layer="21"/>
+<wire x1="2.5" y1="3.735" x2="2.5" y2="2.55" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.515" x2="-2.5" y2="-3.735" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.515" x2="2.5" y2="-3.735" width="0.127" layer="21"/>
+<text x="-2.3" y="-5.1" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-3.5" y="2.7" size="1.016" layer="21" font="vector" ratio="15">*</text>
+<wire x1="-1.5" y1="2.85" x2="1.5" y2="2.85" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.85" x2="-1.5" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.5" y1="2.85" x2="1.5" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.127" layer="21" curve="-180"/>
+<polygon width="0.127" layer="41">
+<vertex x="-3.5" y="3.75"/>
+<vertex x="3.5" y="3.75"/>
+<vertex x="3.5" y="2.5"/>
+<vertex x="1.55" y="2.5"/>
+<vertex x="1.55" y="-2.5"/>
+<vertex x="3.5" y="-2.5"/>
+<vertex x="3.5" y="-3.75"/>
+<vertex x="-3.5" y="-3.75"/>
+<vertex x="-3.5" y="-2.5"/>
+<vertex x="-1.55" y="-2.5"/>
+<vertex x="-1.55" y="2.5"/>
+<vertex x="-3.5" y="2.5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ZX62RD-AB-5P8">
@@ -1014,6 +1050,18 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <pin name="VDDIO" x="10.16" y="22.86" visible="pin" length="middle" direction="pwr" rot="R270"/>
 <text x="12.7" y="-2.54" size="1.778" layer="95">&gt;NAME</text>
 <text x="12.7" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SHT11">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="-2.54" y="12.7" visible="pin" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="-2.54" y="-12.7" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="DATA" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SCK" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<text x="5.08" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1539,6 +1587,27 @@ http://www.ti.com.cn/cn/lit/ds/symlink/hdc1080.pdf</description>
 <connect gate="G$1" pin="SDO" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="VDDIO" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SHT11" prefix="U">
+<description>&lt;b&gt;SHT11&lt;/b&gt;
+&lt;p&gt;
+https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity_Sensors/Sensirion_Humidity_Sensors_SHT1x_Datasheet_V5.pdf</description>
+<gates>
+<gate name="G$1" symbol="SHT11" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SHT1X">
+<connects>
+<connect gate="G$1" pin="DATA" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="SCK" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
