@@ -792,6 +792,44 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <wire x1="0.9906" y1="-0.9144" x2="0.6858" y2="-1.0922" width="0.1778" layer="1" curve="-13.972933"/>
 <wire x1="-0.6096" y1="-1.1176" x2="-0.9144" y2="-0.9652" width="0.1778" layer="1" curve="-12.809775"/>
 </package>
+<package name="VFQFPN_24_4X4">
+<text x="-1.9" y="3" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.9" y="-4.3" size="1.27" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<smd name="10" x="2.215" y="0.25" dx="1" dy="0.32" layer="1"/>
+<smd name="9" x="2.215" y="-0.25" dx="1" dy="0.32" layer="1"/>
+<smd name="11" x="2.215" y="0.75" dx="1" dy="0.32" layer="1"/>
+<smd name="12" x="2.215" y="1.25" dx="1" dy="0.32" layer="1"/>
+<smd name="8" x="2.215" y="-0.75" dx="1" dy="0.32" layer="1"/>
+<smd name="7" x="2.215" y="-1.25" dx="1" dy="0.32" layer="1"/>
+<smd name="15" x="0.25" y="2.215" dx="1" dy="0.32" layer="1" rot="R90"/>
+<smd name="14" x="0.75" y="2.215" dx="1" dy="0.32" layer="1" rot="R90"/>
+<smd name="13" x="1.25" y="2.215" dx="1" dy="0.32" layer="1" rot="R90"/>
+<smd name="16" x="-0.25" y="2.215" dx="1" dy="0.32" layer="1" rot="R90"/>
+<smd name="17" x="-0.75" y="2.215" dx="1" dy="0.32" layer="1" rot="R90"/>
+<smd name="18" x="-1.25" y="2.215" dx="1" dy="0.32" layer="1" rot="R90"/>
+<smd name="21" x="-2.215" y="0.25" dx="1" dy="0.32" layer="1" rot="R180"/>
+<smd name="20" x="-2.215" y="0.75" dx="1" dy="0.32" layer="1" rot="R180"/>
+<smd name="19" x="-2.215" y="1.25" dx="1" dy="0.32" layer="1" rot="R180"/>
+<smd name="22" x="-2.215" y="-0.25" dx="1" dy="0.32" layer="1" rot="R180"/>
+<smd name="23" x="-2.215" y="-0.75" dx="1" dy="0.32" layer="1" rot="R180"/>
+<smd name="24" x="-2.215" y="-1.25" dx="1" dy="0.32" layer="1" rot="R180"/>
+<smd name="4" x="0.25" y="-2.215" dx="1" dy="0.32" layer="1" rot="R270"/>
+<smd name="5" x="0.75" y="-2.215" dx="1" dy="0.32" layer="1" rot="R270"/>
+<smd name="6" x="1.25" y="-2.215" dx="1" dy="0.32" layer="1" rot="R270"/>
+<smd name="3" x="-0.25" y="-2.215" dx="1" dy="0.32" layer="1" rot="R270"/>
+<smd name="2" x="-0.75" y="-2.215" dx="1" dy="0.32" layer="1" rot="R270"/>
+<smd name="1" x="-1.25" y="-2.215" dx="1" dy="0.32" layer="1" rot="R270"/>
+<smd name="GND" x="0" y="0" dx="2.7" dy="2.7" layer="1"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-2" y1="1.6" x2="-2" y2="2" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="-1.6" y2="2" width="0.127" layer="21"/>
+<wire x1="1.6" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="1.6" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.6" x2="2" y2="-2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="1.6" y2="-2" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<text x="-3.1" y="-2.9" size="1.27" layer="21" font="vector" ratio="15">*</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ZX62RD-AB-5P8">
@@ -1264,6 +1302,37 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <vertex x="-2.3813" y="0" curve="-247.498918"/>
 <vertex x="0.9113" y="-2.2"/>
 </polygon>
+</symbol>
+<symbol name="5P49V5923">
+<pin name="XOUT" x="-22.86" y="25.4" length="middle"/>
+<pin name="XIN/REF" x="-22.86" y="22.86" length="middle"/>
+<pin name="CLKIN" x="-22.86" y="10.16" length="middle"/>
+<pin name="CLKINB" x="-22.86" y="7.62" length="middle"/>
+<pin name="CLKSEL" x="-22.86" y="2.54" length="middle"/>
+<pin name="SEL1/SDA" x="-22.86" y="-2.54" length="middle"/>
+<pin name="SEL0/SCL" x="-22.86" y="-5.08" length="middle"/>
+<pin name="SD/OE" x="-22.86" y="-12.7" length="middle"/>
+<wire x1="-17.78" y1="27.94" x2="-17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-30.48" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-30.48" x2="17.78" y2="27.94" width="0.254" layer="94"/>
+<wire x1="17.78" y1="27.94" x2="-17.78" y2="27.94" width="0.254" layer="94"/>
+<pin name="EPAD" x="0" y="-35.56" length="middle" rot="R90"/>
+<pin name="VDDA1" x="22.86" y="25.4" length="middle" rot="R180"/>
+<pin name="VDDA2" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="VDDA3" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="VDDD" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="VDDO0" x="22.86" y="10.16" length="middle" rot="R180"/>
+<pin name="OUT0_SEL_I2CB" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="VDDO1" x="22.86" y="2.54" length="middle" rot="R180"/>
+<pin name="OUT1" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="NC1" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="VDDO2" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="OUT2" x="22.86" y="-10.16" length="middle" rot="R180"/>
+<pin name="NC2" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="NC3" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="NC4" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="NC5" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="NC6" x="22.86" y="-27.94" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1869,6 +1938,45 @@ https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Hu
 </gates>
 <devices>
 <device name="" package="OSHW">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5P49V5923" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="5P49V5923" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VFQFPN_24_4X4">
+<connects>
+<connect gate="G$1" pin="CLKIN" pad="1"/>
+<connect gate="G$1" pin="CLKINB" pad="2"/>
+<connect gate="G$1" pin="CLKSEL" pad="6"/>
+<connect gate="G$1" pin="EPAD" pad="GND"/>
+<connect gate="G$1" pin="NC1" pad="11"/>
+<connect gate="G$1" pin="NC2" pad="12"/>
+<connect gate="G$1" pin="NC3" pad="13"/>
+<connect gate="G$1" pin="NC4" pad="14"/>
+<connect gate="G$1" pin="NC5" pad="16"/>
+<connect gate="G$1" pin="NC6" pad="19"/>
+<connect gate="G$1" pin="OUT0_SEL_I2CB" pad="24"/>
+<connect gate="G$1" pin="OUT1" pad="20"/>
+<connect gate="G$1" pin="OUT2" pad="17"/>
+<connect gate="G$1" pin="SD/OE" pad="7"/>
+<connect gate="G$1" pin="SEL0/SCL" pad="9"/>
+<connect gate="G$1" pin="SEL1/SDA" pad="8"/>
+<connect gate="G$1" pin="VDDA1" pad="5"/>
+<connect gate="G$1" pin="VDDA2" pad="10"/>
+<connect gate="G$1" pin="VDDA3" pad="15"/>
+<connect gate="G$1" pin="VDDD" pad="22"/>
+<connect gate="G$1" pin="VDDO0" pad="23"/>
+<connect gate="G$1" pin="VDDO1" pad="21"/>
+<connect gate="G$1" pin="VDDO2" pad="18"/>
+<connect gate="G$1" pin="XIN/REF" pad="4"/>
+<connect gate="G$1" pin="XOUT" pad="3"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
