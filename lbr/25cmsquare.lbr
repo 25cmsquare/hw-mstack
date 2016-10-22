@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1009,13 +1009,13 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <pin name="10" x="-17.78" y="-10.16" visible="pad" direction="pas" function="dot"/>
 <pin name="11" x="-17.78" y="-12.7" visible="pad" direction="pas" function="dot"/>
 <pin name="12" x="-17.78" y="-15.24" visible="pad" direction="pas" function="dot"/>
-<text x="-9.652" y="12.192" size="1.27" layer="94">VDCDC2</text>
-<text x="-9.652" y="9.652" size="1.27" layer="94">VDCDC1</text>
+<text x="-9.652" y="12.192" size="1.27" layer="94">VCC2</text>
+<text x="-9.652" y="9.652" size="1.27" layer="94">VCC1</text>
 <text x="-9.652" y="7.112" size="1.27" layer="94">GND</text>
-<text x="-9.652" y="4.572" size="1.27" layer="94">VCHRG</text>
-<text x="-9.652" y="2.032" size="1.27" layer="94">LOPWR</text>
-<text x="-9.652" y="-0.762" size="1.27" layer="94">VSYS</text>
-<text x="-9.652" y="-3.048" size="1.27" layer="94">~SHDN</text>
+<text x="-9.652" y="4.572" size="1.27" layer="94">VCC3</text>
+<text x="-9.652" y="2.032" size="1.27" layer="94">IO1</text>
+<text x="-9.652" y="-0.762" size="1.27" layer="94">VCC4</text>
+<text x="-9.652" y="-3.048" size="1.27" layer="94">IO2</text>
 <text x="-9.652" y="-5.588" size="1.27" layer="94">GND</text>
 <text x="-9.652" y="-8.382" size="1.27" layer="94">SPI_C/UART_RT</text>
 <text x="-9.525" y="-15.748" size="1.27" layer="94">I2C_SDA/SPI_MI/UART_RX</text>
