@@ -322,10 +322,10 @@
 <text x="-9.652" y="-0.762" size="1.27" layer="94">VCC4</text>
 <text x="-9.652" y="-3.048" size="1.27" layer="94">IO2</text>
 <text x="-9.652" y="-5.588" size="1.27" layer="94">GND</text>
-<text x="-9.652" y="-8.382" size="1.27" layer="94">SPI_C/UART_RT/D_P</text>
+<text x="-9.652" y="-8.382" size="1.27" layer="94">SPI_C/UART_RT/D_N</text>
 <text x="-9.525" y="-15.748" size="1.27" layer="94">I2C_SDA/SPI_MI/UART_RX</text>
 <text x="-9.525" y="-13.335" size="1.27" layer="94">I2C_SCL/SPI_MO/UART_TX</text>
-<text x="-9.525" y="-10.795" size="1.27" layer="94">SPI_SS/UART_CT/D_N</text>
+<text x="-9.525" y="-10.795" size="1.27" layer="94">SPI_SS/UART_CT/D_P</text>
 </symbol>
 <symbol name="+2V5">
 <wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -9456,7 +9456,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="TP1" library="testpad" deviceset="TP" device="TP14R"/>
 <part name="PE3" library="supply1" deviceset="PE" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
-<part name="PE4" library="supply1" deviceset="PE" device=""/>
 <part name="PE5" library="supply1" deviceset="PE" device=""/>
 <part name="U$5" library="pma" deviceset="ZX62D-B-5PA8" device=""/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805" value="4.7n, 0805"/>
@@ -9552,8 +9551,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="TP1" gate="G$1" x="144.78" y="55.88" rot="R180"/>
 <instance part="PE3" gate="M" x="88.9" y="104.14"/>
 <instance part="GND26" gate="1" x="109.22" y="104.14"/>
-<instance part="PE4" gate="M" x="93.98" y="166.37"/>
-<instance part="PE5" gate="M" x="93.98" y="130.81"/>
+<instance part="PE5" gate="M" x="104.14" y="133.35"/>
 <instance part="U$5" gate="G$1" x="104.14" y="152.4" rot="MR0"/>
 <instance part="C9" gate="G$1" x="96.52" y="114.3" smashed="yes" rot="MR270">
 <attribute name="NAME" x="95.504" y="111.379" size="1.778" layer="95" rot="MR180"/>
@@ -9935,24 +9933,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="PE" class="0">
 <segment>
-<wire x1="104.14" y1="162.56" x2="104.14" y2="168.91" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="168.91" x2="101.6" y2="168.91" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="168.91" x2="101.6" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="168.91" x2="93.98" y2="168.91" width="0.1524" layer="91"/>
-<junction x="101.6" y="168.91"/>
-<pinref part="PE4" gate="M" pin="PE"/>
-<pinref part="U$5" gate="G$1" pin="MTN1"/>
-<pinref part="U$5" gate="G$1" pin="MTN2"/>
-</segment>
-<segment>
-<wire x1="104.14" y1="142.24" x2="104.14" y2="133.35" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="133.35" x2="101.6" y2="133.35" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="142.24" x2="101.6" y2="133.35" width="0.1524" layer="91"/>
-<wire x1="101.6" y1="133.35" x2="93.98" y2="133.35" width="0.1524" layer="91"/>
-<junction x="101.6" y="133.35"/>
+<wire x1="104.14" y1="142.24" x2="104.14" y2="135.89" width="0.1524" layer="91"/>
 <pinref part="PE5" gate="M" pin="PE"/>
 <pinref part="U$5" gate="G$1" pin="MTN3"/>
-<pinref part="U$5" gate="G$1" pin="MTN4"/>
 </segment>
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -9983,9 +9966,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="116.84" y="154.94" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="PWR1" gate="G$1" pin="10"/>
-<wire x1="53.34" y1="160.02" x2="71.12" y2="160.02" width="0.1524" layer="91"/>
-<label x="71.12" y="160.02" size="1.778" layer="95" xref="yes"/>
+<pinref part="PWR1" gate="G$1" pin="9"/>
+<wire x1="53.34" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
+<label x="73.66" y="157.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D_P" class="0">
@@ -9995,9 +9978,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="109.22" y1="152.4" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PWR1" gate="G$1" pin="9"/>
-<wire x1="53.34" y1="157.48" x2="78.74" y2="157.48" width="0.1524" layer="91"/>
-<label x="78.74" y="157.48" size="1.778" layer="95" xref="yes"/>
+<pinref part="PWR1" gate="G$1" pin="10"/>
+<wire x1="53.34" y1="160.02" x2="63.5" y2="160.02" width="0.1524" layer="91"/>
+<label x="63.5" y="160.02" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

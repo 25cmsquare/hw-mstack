@@ -1017,10 +1017,10 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <text x="-9.652" y="-0.762" size="1.27" layer="94">VCC4</text>
 <text x="-9.652" y="-3.048" size="1.27" layer="94">IO2</text>
 <text x="-9.652" y="-5.588" size="1.27" layer="94">GND</text>
-<text x="-9.652" y="-8.382" size="1.27" layer="94">SPI_C/UART_RT/D_P</text>
+<text x="-9.652" y="-8.382" size="1.27" layer="94">SPI_C/UART_RT/D_N</text>
 <text x="-9.525" y="-15.748" size="1.27" layer="94">I2C_SDA/SPI_MI/UART_RX</text>
 <text x="-9.525" y="-13.335" size="1.27" layer="94">I2C_SCL/SPI_MO/UART_TX</text>
-<text x="-9.525" y="-10.795" size="1.27" layer="94">SPI_SS/UART_CT/D_N</text>
+<text x="-9.525" y="-10.795" size="1.27" layer="94">SPI_SS/UART_CT/D_P</text>
 </symbol>
 <symbol name="FSM4JH">
 <wire x1="0" y1="-3.175" x2="0" y2="-2.54" width="0.254" layer="94"/>
