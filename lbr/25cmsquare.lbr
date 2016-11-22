@@ -1236,18 +1236,18 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <text x="-4.826" y="9.652" size="1.016" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 </package>
 <package name="DA101MC">
-<smd name="4" x="5.75" y="0" dx="1.6" dy="1" layer="1"/>
-<smd name="3" x="-5.75" y="0" dx="1.6" dy="1" layer="1"/>
-<smd name="5" x="5.75" y="2.54" dx="1.6" dy="1" layer="1"/>
-<smd name="6" x="5.75" y="5.08" dx="1.6" dy="1" layer="1"/>
-<smd name="2" x="-5.75" y="2.54" dx="1.6" dy="1" layer="1"/>
-<smd name="1" x="-5.75" y="5.08" dx="1.6" dy="1" layer="1"/>
-<wire x1="-4.76" y1="7.04" x2="-4.76" y2="-1.96" width="0.127" layer="21"/>
-<wire x1="-4.76" y1="-1.96" x2="4.76" y2="-1.96" width="0.127" layer="21"/>
-<wire x1="4.76" y1="-1.96" x2="4.76" y2="7.04" width="0.127" layer="21"/>
-<wire x1="4.76" y1="7.04" x2="-4.76" y2="7.04" width="0.127" layer="21"/>
-<text x="-2.54" y="7.62" size="1.016" layer="21" font="vector" ratio="15">&gt;NAME</text>
-<circle x="-3.81" y="6.35" radius="0.127" width="0.381" layer="21"/>
+<smd name="4" x="5.75" y="-2.54" dx="1.6" dy="1" layer="1"/>
+<smd name="3" x="-5.75" y="-2.54" dx="1.6" dy="1" layer="1"/>
+<smd name="5" x="5.75" y="0" dx="1.6" dy="1" layer="1"/>
+<smd name="6" x="5.75" y="2.54" dx="1.6" dy="1" layer="1"/>
+<smd name="2" x="-5.75" y="0" dx="1.6" dy="1" layer="1"/>
+<smd name="1" x="-5.75" y="2.54" dx="1.6" dy="1" layer="1"/>
+<wire x1="-4.76" y1="4.5" x2="-4.76" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-4.76" y1="-4.5" x2="4.76" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="4.76" y1="-4.5" x2="4.76" y2="4.5" width="0.127" layer="21"/>
+<wire x1="4.76" y1="4.5" x2="-4.76" y2="4.5" width="0.127" layer="21"/>
+<text x="-2.54" y="5.08" size="1.016" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<circle x="-3.81" y="3.81" radius="0.127" width="0.381" layer="21"/>
 </package>
 <package name="PLT133_T10W">
 <pad name="2" x="0" y="0" drill="0.8"/>
