@@ -1235,7 +1235,7 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <pad name="22" x="0" y="7.62" drill="2.6" diameter="4"/>
 <text x="-4.826" y="9.652" size="1.016" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 </package>
-<package name="DM103MC">
+<package name="DA101MC">
 <smd name="4" x="5.75" y="0" dx="1.6" dy="1" layer="1"/>
 <smd name="3" x="-5.75" y="0" dx="1.6" dy="1" layer="1"/>
 <smd name="5" x="5.75" y="2.54" dx="1.6" dy="1" layer="1"/>
@@ -2384,7 +2384,7 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="DM">
+<symbol name="DA">
 <pin name="1" x="-5.08" y="2.54" visible="off" length="short"/>
 <pin name="3" x="-5.08" y="-2.54" visible="off" length="short"/>
 <pin name="6" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
@@ -3522,12 +3522,12 @@ https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Hu
 </device>
 </devices>
 </deviceset>
-<deviceset name="DM" prefix="T">
+<deviceset name="DA" prefix="T">
 <gates>
-<gate name="G$1" symbol="DM" x="0" y="-2.54"/>
+<gate name="G$1" symbol="DA" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="103MC" package="DM103MC">
+<device name="101MC" package="DA101MC">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="3" pad="3"/>
