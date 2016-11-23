@@ -9567,6 +9567,24 @@ Commons Attribution-ShareAlike 4.0
 International License.
 http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="215.9" y="20.32" size="2.54" layer="94">http://25cmsquare.io</text>
+<text x="266.7" y="93.98" size="1.778" layer="97">2323652 TLV70233DBVT   3.3V 300mA LDO Voltage Regulators 0.385
+2455665 TLV70225DBVT   LDO VOLTAGE REGULATOR, FIXED, 2.5V, 300mA 0.422
+1312587 LM3674MF-ADJ   DC-DC Switching Buck (Step Down) Regulator, Adjustable 1.09
+1224452 STM1061N29WX6F Voltage Detector, Active-Low Reset 0.604
+1838906 ADM1085AKSZ-REEL7 Sequencer, 2.25V-3.6Vin 0.363
+
+10 x 2443254 BLM21PG331SH1D Ferrite Bead, 330 ohm 0.0754
+2408020 LPS3015-222MRB Surface Mount Power Inductor 1.66
+
+5x 1828827 GRM21BR71A105KA01L  SMD Multilayer Ceramic Capacitor, 0805 [2012 Metric], 1 µF 0.0422
+5x 2362110 GRM21BR61A225KA01L SMD Multilayer Ceramic Capacitor, 0805 [2012 Metric], 2.2 µF 0.0766
+5x 1828805 GRM21BR61A106KE19L SMD Multilayer Ceramic Capacitor, 0805 [2012 Metric], 10 µF 0.134
+5x 1845742 GRM21BR61A475KA73L SMD Multilayer Ceramic Capacitor, 0805 [2012 Metric], 4.7 µF, 0.0693
+10x 2497020 0805N180J500CT SMD Multilayer Ceramic Capacitor, 0805 [2012 Metric], 18 pF 0.028
+5x 1856410 MCSH21B222K100CT SMD Multilayer Ceramic Capacitor, 0805 [2012 Metric], 2200 pF 0.0429
+5x 1856422 MCSH21B104K100CT SMD Multilayer Ceramic Capacitor, 0805 [2012 Metric], 0.1 µF 0.0437
+
+</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="50.8" y="104.14"/>
