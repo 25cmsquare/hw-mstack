@@ -138,7 +138,7 @@
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.4986" x2="-0.4826" y2="1.4986" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0.1524" layer="21" curve="-180"/>
-<text x="-2.1336" y="1.3716" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">*</text>
+<text x="-1.6256" y="1.3716" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">*</text>
 <text x="-2.1844" y="2.54" size="1.016" layer="25" font="vector" ratio="15" rot="SR0">&gt;NAME</text>
 </package>
 <package name="SOP50P310X90-8N">
@@ -924,7 +924,7 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <wire x1="-0.2794" y1="-1.0922" x2="0.2794" y2="-1.0922" width="0.1524" layer="21"/>
 <wire x1="0.2794" y1="1.0922" x2="-0.2794" y2="1.0922" width="0.1524" layer="21"/>
 <wire x1="0.127" y1="0.8128" x2="-0.127" y2="0.8128" width="0.1524" layer="21" curve="-49"/>
-<text x="-2.0066" y="1.2446" size="1.016" layer="51" font="vector" ratio="15" rot="SR0">*</text>
+<text x="-1.3716" y="0.9906" size="1.016" layer="51" font="vector" ratio="15" rot="SR0">*</text>
 <text x="-1.5494" y="-2.413" size="1.016" layer="25" font="vector" ratio="15" rot="SR0">&gt;NAME</text>
 </package>
 <package name="TQFP128">
