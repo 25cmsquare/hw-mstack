@@ -1202,8 +1202,8 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <package name="RCJ-01X">
 <wire x1="2.286" y1="7.62" x2="4.826" y2="7.62" width="0.1524" layer="21"/>
 <wire x1="-5.588" y1="2.413" x2="-5.588" y2="6.858" width="0.6096" layer="21"/>
-<wire x1="-1.397" y1="0" x2="-1.397" y2="5.969" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="0" x2="1.397" y2="5.969" width="0.1524" layer="21"/>
+<wire x1="-1.397" y1="0.508" x2="-1.397" y2="5.969" width="0.1524" layer="21"/>
+<wire x1="1.397" y1="0.508" x2="1.397" y2="5.969" width="0.1524" layer="21"/>
 <wire x1="4.826" y1="7.62" x2="5.588" y2="6.858" width="0.6096" layer="21" curve="-90"/>
 <wire x1="5.588" y1="6.858" x2="5.588" y2="2.413" width="0.6096" layer="21"/>
 <wire x1="-5.588" y1="6.858" x2="-4.826" y2="7.62" width="0.6096" layer="21" curve="-90"/>
