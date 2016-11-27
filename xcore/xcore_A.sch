@@ -8837,8 +8837,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="100n, 0603"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="+2V3" library="25cmsquare" deviceset="+2V5" device=""/>
-<part name="J_TO_MASTER" library="25pinhead" deviceset="PINHD-3X21" device="/90"/>
-<part name="J_TO_SLAVE" library="25pinhead" deviceset="PINHD-3X21" device="/90"/>
+<part name="J_TO_MASTER" library="25pinhead" deviceset="PINHD-3X21" device="/90" value="TSW-121-08-G-T-RA"/>
+<part name="J_TO_SLAVE" library="25pinhead" deviceset="PINHD-3X21" device="/90" value="TSW-121-08-G-T-RA"/>
 </parts>
 <sheets>
 <sheet>

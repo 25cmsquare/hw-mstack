@@ -2196,8 +2196,8 @@ design rules under a new name.</description>
 <element name="C3" library="rcl" package="C0603" value="100n, 0603" x="23.478" y="27.5006" smashed="yes">
 <attribute name="NAME" x="22.843" y="28.1356" size="1.27" layer="25"/>
 </element>
-<element name="J_TO_MASTER" library="25pinhead" package="3X21/90" value="PINHD-3X21/90" x="35" y="71.308"/>
-<element name="J_TO_SLAVE" library="25pinhead" package="3X21/90" value="PINHD-3X21/90" x="35" y="-1.3208" rot="R180"/>
+<element name="J_TO_MASTER" library="25pinhead" package="3X21/90" value="TSW-121-08-G-T-RA" x="35" y="71.308"/>
+<element name="J_TO_SLAVE" library="25pinhead" package="3X21/90" value="TSW-121-08-G-T-RA" x="35" y="-1.3208" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
