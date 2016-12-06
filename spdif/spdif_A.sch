@@ -7842,6 +7842,20 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <sheet>
 <plain>
 <text x="167.64" y="10.16" size="6.4516" layer="94">16.11.22.A</text>
+<text x="266.7" y="134.62" size="1.778" layer="94">digikey: 
+
+1080-1433-ND             PLR135/T10          Fiber Optic Receiver General Data Transfer 16Mbps  	1.45
+1080-1430-ND             PLT133/T10W       Fiber Optic Transmitter with Driver 660nm 16Mbps	1.03
+
+CP-1401-ND                RCJ-012               3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack                 0.75
+CP-1403-ND                RCJ-014               3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack                 0.75
+
+FIN1002M5XCT-ND      FIN1002M5X        0/1 Receiver LVDS SOT-23-5		0.45
+FIN1001M5XCT-ND      FIN1001M5X        1/0 Driver LVDS SOT-23-5			0.66
+
+NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6		0.32
+
+811-3122-1-ND           DA101MC- R         DIGITAL AUDIO TX			0.96</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -8855,4 +8869,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
