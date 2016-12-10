@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1464,7 +1464,7 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <wire x1="76.484" y1="53.6144" x2="76.865" y2="53.97" width="0.1524" layer="21"/>
 <wire x1="78.135" y1="56.51" x2="76.865" y2="56.51" width="0.1524" layer="21"/>
 <wire x1="78.516" y1="56.1544" x2="78.135" y2="56.51" width="0.1524" layer="21"/>
-<wire x1="76.865" y1="56.51" x2="76.4332" y2="56.129" width="0.1524" layer="21"/>
+<wire x1="76.865" y1="56.51" x2="76.4586" y2="56.1544" width="0.1524" layer="21"/>
 <wire x1="78.135" y1="26.03" x2="78.516" y2="25.6744" width="0.1524" layer="21"/>
 <wire x1="78.516" y1="23.8456" x2="78.135" y2="23.49" width="0.1524" layer="21"/>
 <wire x1="78.135" y1="23.49" x2="76.865" y2="23.49" width="0.1524" layer="21"/>
