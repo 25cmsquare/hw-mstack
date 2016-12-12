@@ -3594,7 +3594,7 @@ https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Hu
 <connect gate="_POWER" pin="USB_VDD33" pad="44"/>
 <connect gate="_POWER" pin="VDD" pad="11 16 17 24 36 41 56 60 73 80 81 87 101 102 120 126"/>
 <connect gate="_POWER" pin="VDDIOL" pad="6 14 19 29 42"/>
-<connect gate="_POWER" pin="VDDIOR" pad="52 67 78 83 92" route="any"/>
+<connect gate="_POWER" pin="VDDIOR" pad="52 67 78 83 92"/>
 <connect gate="_POWER" pin="VDDIOT" pad="110 111"/>
 <connect gate="_SYSTEM" pin="CLK" pad="125"/>
 <connect gate="_SYSTEM" pin="RST_N" pad="124"/>
