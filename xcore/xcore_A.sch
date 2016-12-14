@@ -1187,22 +1187,22 @@
 <connect gate="_IO" pin="CLK1" pad="102"/>
 <connect gate="_IO" pin="GND0" pad="103"/>
 <connect gate="_IO" pin="GND1" pad="104"/>
-<connect gate="_IO" pin="I2C0_SCL" pad="105"/>
-<connect gate="_IO" pin="I2C0_SDA" pad="106"/>
-<connect gate="_IO" pin="I2C1_SCL" pad="107"/>
-<connect gate="_IO" pin="I2C1_SDA" pad="108"/>
+<connect gate="_IO" pin="I2C0_SCL" pad="116"/>
+<connect gate="_IO" pin="I2C0_SDA" pad="115"/>
+<connect gate="_IO" pin="I2C1_SCL" pad="114"/>
+<connect gate="_IO" pin="I2C1_SDA" pad="113"/>
 <connect gate="_IO" pin="IO0" pad="109"/>
 <connect gate="_IO" pin="IO1" pad="110"/>
-<connect gate="_IO" pin="IO2" pad="111"/>
-<connect gate="_IO" pin="IO3" pad="112"/>
-<connect gate="_IO" pin="IO4" pad="113"/>
-<connect gate="_IO" pin="IO5" pad="114"/>
-<connect gate="_IO" pin="UART0_RX" pad="115"/>
-<connect gate="_IO" pin="UART0_TX" pad="116"/>
-<connect gate="_IO" pin="UART1_RX" pad="117"/>
-<connect gate="_IO" pin="UART1_TX" pad="118"/>
-<connect gate="_IO" pin="USB_DN" pad="119"/>
-<connect gate="_IO" pin="USB_DP" pad="120"/>
+<connect gate="_IO" pin="IO2" pad="107"/>
+<connect gate="_IO" pin="IO3" pad="108"/>
+<connect gate="_IO" pin="IO4" pad="105"/>
+<connect gate="_IO" pin="IO5" pad="106"/>
+<connect gate="_IO" pin="UART0_RX" pad="120"/>
+<connect gate="_IO" pin="UART0_TX" pad="119"/>
+<connect gate="_IO" pin="UART1_RX" pad="118"/>
+<connect gate="_IO" pin="UART1_TX" pad="117"/>
+<connect gate="_IO" pin="USB_DN" pad="111"/>
+<connect gate="_IO" pin="USB_DP" pad="112"/>
 <connect gate="_PWR" pin="GND0" pad="2"/>
 <connect gate="_PWR" pin="GND1" pad="4"/>
 <connect gate="_PWR" pin="GND2" pad="6"/>
@@ -1263,6 +1263,29 @@
 <text x="343.916" y="4.953" size="2.54" layer="94">Sheet:</text>
 <frame x1="0" y1="0" x2="387.35" y2="260.35" columns="8" rows="5" layer="94"/>
 </symbol>
+<symbol name="A4L-LOC">
+<wire x1="256.54" y1="3.81" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="8.89" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="13.97" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="256.54" y1="19.05" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="3.81" x2="161.29" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="161.29" y1="24.13" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="24.13" x2="256.54" y2="24.13" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="3.81" x2="246.38" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="8.89" x2="256.54" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="246.38" y1="8.89" x2="215.265" y2="8.89" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="3.81" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="8.89" x2="215.265" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="256.54" y2="13.97" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="13.97" x2="215.265" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="256.54" y2="19.05" width="0.1016" layer="94"/>
+<wire x1="215.265" y1="19.05" x2="215.265" y2="24.13" width="0.1016" layer="94"/>
+<text x="217.17" y="15.24" size="2.54" layer="94">&gt;DRAWING_NAME</text>
+<text x="217.17" y="10.16" size="2.286" layer="94">&gt;LAST_DATE_TIME</text>
+<text x="230.505" y="5.08" size="2.54" layer="94">&gt;SHEET</text>
+<text x="216.916" y="4.953" size="2.54" layer="94">Sheet:</text>
+<frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="A3L-LOC" prefix="FRAME" uservalue="yes">
@@ -1270,6 +1293,20 @@
 DIN A3, landscape with location and doc. field</description>
 <gates>
 <gate name="G$1" symbol="A3L-LOC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="A4L-LOC" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+DIN A4, landscape with location and doc. field</description>
+<gates>
+<gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -8993,12 +9030,13 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C22" library="rcl" deviceset="C-EU" device="C0402K" value="100n, 0402"/>
 <part name="C38" library="rcl" deviceset="C-EU" device="C0402K" value="100n, 0402"/>
 <part name="J0" library="25cmsquare" deviceset="LIWE_40_PIN" device=""/>
+<part name="FRAME2" library="frames" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="300.99" y="12.7" size="3.556" layer="94">16.11.09.A</text>
-<text x="213.36" y="7.62" size="2.54" layer="94">This work is licensed under a Creative
+<text x="187.96" y="7.62" size="2.54" layer="94">This work is licensed under a Creative
 Commons Attribution-ShareAlike 4.0
 International License.
 http://creativecommons.org/licenses/by-sa/4.0/</text>
@@ -10991,6 +11029,23 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="340.36" y1="154.94" x2="335.28" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+<text x="173.99" y="12.7" size="3.556" layer="94">16.11.09.A</text>
+<text x="60.96" y="7.62" size="2.54" layer="94" font="vector">This work is licensed under a Creative
+Commons Attribution-ShareAlike 4.0
+International License.
+http://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="215.9" y="20.32" size="2.54" layer="94">http://25cmsquare.io</text>
+</plain>
+<instances>
+<instance part="FRAME2" gate="G$1" x="0" y="0"/>
+</instances>
+<busses>
+</busses>
+<nets>
 </nets>
 </sheet>
 </sheets>
