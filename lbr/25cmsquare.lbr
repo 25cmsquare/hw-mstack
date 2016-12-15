@@ -3055,7 +3055,7 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <text x="-20.32" y="15.875" size="1.778" layer="95">&gt;NAME</text>
 <text x="-20.32" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="CLK0" x="-22.86" y="12.7" length="middle" direction="pas" function="dot"/>
-<pin name="GND0" x="-22.86" y="10.16" length="middle" direction="pas" function="dot"/>
+<pin name="CLK2" x="-22.86" y="10.16" length="middle" direction="pas" function="dot"/>
 <pin name="IO4" x="-22.86" y="7.62" length="middle" direction="pas" function="dot"/>
 <pin name="IO2" x="-22.86" y="5.08" length="middle" direction="pas" function="dot"/>
 <pin name="IO0" x="-22.86" y="2.54" length="middle" direction="pas" function="dot"/>
@@ -3064,7 +3064,7 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <pin name="I2C0_SDA" x="-22.86" y="-5.08" length="middle" direction="pas" function="dot"/>
 <pin name="UART1_TX" x="-22.86" y="-7.62" length="middle" direction="pas" function="dot"/>
 <pin name="UART0_TX" x="-22.86" y="-10.16" length="middle" direction="pas" function="dot"/>
-<pin name="GND1" x="15.24" y="10.16" length="middle" direction="pas" function="dot" rot="R180"/>
+<pin name="CLK3" x="15.24" y="10.16" length="middle" direction="pas" function="dot" rot="R180"/>
 <pin name="CLK1" x="15.24" y="12.7" length="middle" direction="pas" function="dot" rot="R180"/>
 <pin name="IO5" x="15.24" y="7.62" length="middle" direction="pas" function="dot" rot="R180"/>
 <pin name="IO3" x="15.24" y="5.08" length="middle" direction="pas" function="dot" rot="R180"/>
@@ -4260,8 +4260,8 @@ https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Hu
 <connects>
 <connect gate="_IO" pin="CLK0" pad="101"/>
 <connect gate="_IO" pin="CLK1" pad="102"/>
-<connect gate="_IO" pin="GND0" pad="103"/>
-<connect gate="_IO" pin="GND1" pad="104"/>
+<connect gate="_IO" pin="CLK2" pad="103"/>
+<connect gate="_IO" pin="CLK3" pad="104"/>
 <connect gate="_IO" pin="I2C0_SCL" pad="116"/>
 <connect gate="_IO" pin="I2C0_SDA" pad="115"/>
 <connect gate="_IO" pin="I2C1_SCL" pad="114"/>
