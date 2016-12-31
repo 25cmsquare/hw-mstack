@@ -1481,7 +1481,7 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="10.16" y1="-1.905" x2="10.795" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="12.7" y1="1.905" x2="12.7" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="10.795" y1="-2.54" x2="12.065" y2="-2.54" width="0.1524" layer="21"/>
-<pad name="1" x="-11.43" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="1" x="-11.43" y="-1.27" drill="1.016" shape="square"/>
 <pad name="2" x="-11.43" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="3" x="-8.89" y="-1.27" drill="1.016" shape="octagon"/>
 <pad name="4" x="-8.89" y="1.27" drill="1.016" shape="octagon"/>
@@ -9546,8 +9546,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="POR" library="testpad" deviceset="TP" device="TP14R"/>
 <part name="RST_N" library="testpad" deviceset="TP" device="TP14R"/>
 <part name="CLK" library="testpad" deviceset="TP" device="TP14R"/>
-<part name="CLK1" library="testpad" deviceset="TP" device="TP14R"/>
-<part name="CLK2" library="testpad" deviceset="TP" device="TP14R"/>
+<part name="X1D00" library="testpad" deviceset="TP" device="TP14R"/>
+<part name="X0D11" library="testpad" deviceset="TP" device="TP14R"/>
 </parts>
 <sheets>
 <sheet>
@@ -9875,8 +9875,8 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <instance part="POR" gate="G$1" x="53.34" y="40.64"/>
 <instance part="RST_N" gate="G$1" x="121.92" y="40.64"/>
 <instance part="CLK" gate="G$1" x="149.86" y="45.72"/>
-<instance part="CLK1" gate="G$1" x="228.6" y="76.2"/>
-<instance part="CLK2" gate="G$1" x="228.6" y="66.04" rot="R180"/>
+<instance part="X1D00" gate="G$1" x="228.6" y="76.2"/>
+<instance part="X0D11" gate="G$1" x="228.6" y="66.04" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10852,7 +10852,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="68.58" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
 <label x="231.14" y="68.58" size="1.778" layer="95" xref="yes"/>
-<pinref part="CLK2" gate="G$1" pin="TP"/>
+<pinref part="X0D11" gate="G$1" pin="TP"/>
 <wire x1="228.6" y1="68.58" x2="231.14" y2="68.58" width="0.1524" layer="91"/>
 <junction x="228.6" y="68.58"/>
 </segment>
@@ -11074,7 +11074,7 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pinref part="R27" gate="G$1" pin="2"/>
 <wire x1="226.06" y1="73.66" x2="228.6" y2="73.66" width="0.1524" layer="91"/>
 <label x="231.14" y="73.66" size="1.778" layer="95" xref="yes"/>
-<pinref part="CLK1" gate="G$1" pin="TP"/>
+<pinref part="X1D00" gate="G$1" pin="TP"/>
 <wire x1="228.6" y1="73.66" x2="231.14" y2="73.66" width="0.1524" layer="91"/>
 <junction x="228.6" y="73.66"/>
 </segment>
