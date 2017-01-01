@@ -2371,7 +2371,7 @@ DIN A4, landscape with location and doc. field</description>
 <circle x="-1.27" y="7.62" radius="0.9525" width="0.1524" layer="94"/>
 <wire x1="-2.2225" y1="7.62" x2="-2.54" y2="7.62" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="PINHD3X25">
+<symbol name="PINH3X25">
 <wire x1="2.54" y1="-60.96" x2="2.54" y2="50.8" width="0.4064" layer="94"/>
 <wire x1="2.54" y1="50.8" x2="2.54" y2="55.88" width="0.4064" layer="94"/>
 <wire x1="2.54" y1="55.88" x2="2.54" y2="60.96" width="0.4064" layer="94"/>
@@ -2718,7 +2718,7 @@ DIN A4, landscape with location and doc. field</description>
 </deviceset>
 <deviceset name="PINHD-3X25" prefix="J">
 <gates>
-<gate name="G$1" symbol="PINHD3X25" x="0" y="-2.54"/>
+<gate name="G$1" symbol="PINH3X25" x="0" y="-2.54"/>
 </gates>
 <devices>
 <device name="/90" package="3X25/90">
@@ -9559,7 +9559,7 @@ International License.
 http://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="342.9" y="20.32" size="2.54" layer="94">http://25cmsquare.io</text>
 <text x="73.66" y="66.04" size="1.778" layer="94">Place R4 and R5 close to the device.</text>
-<text x="195.58" y="180.34" size="1.778" layer="94">Place R10 and R14 close to the device.</text>
+<text x="195.58" y="180.34" size="1.778" layer="94">Place R10 - R14 close to the device.</text>
 </plain>
 <instances>
 <instance part="X1" gate="_TILE_0_IO" x="60.96" y="106.68" rot="MR0"/>
