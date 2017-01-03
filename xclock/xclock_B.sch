@@ -7452,6 +7452,21 @@ DIN A3, landscape with location and doc. field</description>
 <rectangle x1="17.399" y1="9.525" x2="18.161" y2="10.033" layer="21"/>
 <wire x1="17.78" y1="15.875" x2="17.78" y2="10.16" width="0.762" layer="21"/>
 </package>
+<package name="1X01">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" shape="octagon"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PINH3X8">
@@ -7516,6 +7531,15 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-2.032" y1="17.78" x2="-2.032" y2="18.796" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="17.78" x2="-2.032" y2="17.78" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="PINHD1">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PINHD-3X8" prefix="J" uservalue="yes">
@@ -7549,6 +7573,22 @@ DIN A3, landscape with location and doc. field</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7632,6 +7672,12 @@ DIN A3, landscape with location and doc. field</description>
 <part name="C14" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="0.1u"/>
 <part name="J1" library="25pinhead" deviceset="PINHD-3X8" device="/90"/>
+<part name="SCL" library="25pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="SDA" library="25pinhead" deviceset="PINHD-1X1" device=""/>
+<part name="GND14" library="25cmsquare" deviceset="TEST-22-MULTICOMP" device=""/>
+<part name="GND18" library="supply1" deviceset="GND" device=""/>
+<part name="VDDD" library="25cmsquare" deviceset="TEST-22-MULTICOMP" device=""/>
+<part name="VDDA" library="25cmsquare" deviceset="TEST-22-MULTICOMP" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7743,6 +7789,12 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <instance part="C14" gate="G$1" x="154.94" y="78.74" rot="R180"/>
 <instance part="C15" gate="G$1" x="165.1" y="78.74" rot="R180"/>
 <instance part="J1" gate="G$1" x="332.74" y="226.06"/>
+<instance part="SCL" gate="G$1" x="27.94" y="246.38" rot="R90"/>
+<instance part="SDA" gate="G$1" x="83.82" y="246.38" rot="R90"/>
+<instance part="GND14" gate="G$1" x="40.64" y="71.12" rot="MR90"/>
+<instance part="GND18" gate="1" x="40.64" y="68.58" rot="MR0"/>
+<instance part="VDDD" gate="G$1" x="68.58" y="91.44" rot="MR90"/>
+<instance part="VDDA" gate="G$1" x="160.02" y="91.44" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -7764,8 +7816,12 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 </segment>
 <segment>
 <pinref part="U$1" gate="_IO" pin="I2C1_SDA"/>
-<wire x1="76.2" y1="236.22" x2="81.28" y2="236.22" width="0.1524" layer="91"/>
-<label x="81.28" y="236.22" size="1.778" layer="95" xref="yes"/>
+<wire x1="76.2" y1="236.22" x2="83.82" y2="236.22" width="0.1524" layer="91"/>
+<label x="88.9" y="236.22" size="1.778" layer="95" xref="yes"/>
+<pinref part="SDA" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="236.22" x2="88.9" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="243.84" x2="83.82" y2="236.22" width="0.1524" layer="91"/>
+<junction x="83.82" y="236.22"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -7779,9 +7835,13 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <label x="127" y="139.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="38.1" y1="236.22" x2="33.02" y2="236.22" width="0.1524" layer="91"/>
-<label x="33.02" y="236.22" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="38.1" y1="236.22" x2="27.94" y2="236.22" width="0.1524" layer="91"/>
+<label x="22.86" y="236.22" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$1" gate="_IO" pin="I2C1_SCL"/>
+<pinref part="SCL" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="236.22" x2="22.86" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="243.84" x2="27.94" y2="236.22" width="0.1524" layer="91"/>
+<junction x="27.94" y="236.22"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="SCL"/>
@@ -7929,6 +7989,10 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <wire x1="147.32" y1="132.08" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND14" gate="G$1" pin="1"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="XOUT" class="0">
 <segment>
@@ -7978,11 +8042,15 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <junction x="144.78" y="86.36"/>
 <wire x1="144.78" y1="86.36" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="154.94" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="160.02" y1="86.36" x2="165.1" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="86.36" x2="165.1" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="83.82" x2="154.94" y2="86.36" width="0.1524" layer="91"/>
 <junction x="154.94" y="86.36"/>
+<pinref part="VDDA" gate="G$1" pin="1"/>
+<wire x1="160.02" y1="91.44" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<junction x="160.02" y="86.36"/>
 </segment>
 </net>
 <net name="OUT0_" class="0">
@@ -8110,8 +8178,9 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="83.82" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="86.36" x2="73.66" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="86.36" x2="99.06" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
@@ -8132,6 +8201,9 @@ http://creativecommons.org/licenses/by-sa/4.0/</text>
 <pinref part="FB1" gate="G$1" pin="2"/>
 <wire x1="58.42" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
 <junction x="60.96" y="86.36"/>
+<pinref part="VDDD" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="91.44" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
+<junction x="68.58" y="86.36"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VDD"/>
