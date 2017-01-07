@@ -41,7 +41,7 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
@@ -2781,10 +2781,10 @@ design rules under a new name.
 <attribute name="NAME" x="64.77" y="72.263" size="1.016" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="C22" library="rcl" package="C0402K" value="100n, 0402" x="35.3568" y="42.0878" smashed="yes" rot="MR0">
-<attribute name="NAME" x="33.401" y="41.656" size="1.016" layer="26" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="33.528" y="41.4528" size="1.016" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="C38" library="rcl" package="C0402K" value="100n, 0402" x="36.5252" y="43.1038" smashed="yes" rot="MR0">
-<attribute name="NAME" x="34.1884" y="42.799" size="1.016" layer="26" ratio="15" rot="MR0"/>
+<attribute name="NAME" x="34.1884" y="42.799" size="1.016" layer="26" font="vector" ratio="15" rot="MR0"/>
 </element>
 <element name="J0" library="25cmsquare" package="LIWE_40_PIN_8X8" value="LIWE_40_PIN" x="0" y="80" rot="R270"/>
 <element name="TDO" library="25pinhead" package="2X02" value="" x="42.5246" y="69.1134" smashed="yes">
@@ -2875,7 +2875,7 @@ design rules under a new name.
 <attribute name="VALUE" x="54.0766" y="42.0878" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R28" library="rcl" package="R0603" value="" x="28.4226" y="29.2608" smashed="yes" rot="R45">
-<attribute name="NAME" x="26.889571875" y="29.0068" size="1.016" layer="25" font="vector" ratio="15" rot="R45"/>
+<attribute name="NAME" x="27.270571875" y="26.289" size="1.016" layer="25" font="vector" ratio="15"/>
 <attribute name="VALUE" x="29.320625" y="27.464746875" size="1.27" layer="27" rot="R45"/>
 </element>
 <element name="U2" library="25cmsquare" package="SOT95P280X140-5N" value="FIN1002" x="23.3426" y="58.9788" smashed="yes" rot="R270">

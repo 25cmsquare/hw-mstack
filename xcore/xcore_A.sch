@@ -9608,7 +9608,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <plain>
 <text x="298.45" y="12.7" size="5.08" layer="94">16.11.09.A</text>
 <text x="73.66" y="66.04" size="1.778" layer="94">Place R4 and R5 close to the device.</text>
-<text x="236.22" y="180.34" size="1.778" layer="94">Place R10 - R14 close to the device.</text>
+<text x="226.06" y="180.34" size="1.778" layer="94">Place R10 - R14 close to the device.</text>
 </plain>
 <instances>
 <instance part="X1" gate="_TILE_0_IO" x="60.96" y="106.68" rot="MR0"/>
