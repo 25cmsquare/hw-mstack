@@ -7691,11 +7691,6 @@ DIN A3, landscape with location and doc. field</description>
 10 x ferrite, 240mohm, 0603, 445-172817-1-ND
 3  x xtal, 25MHz, 800-2968-1-ND
 3  x xtal, 25MHz, 887-1283-1-ND</text>
-<text x="86.36" y="5.08" size="2.54" layer="94">This work is licensed under a Creative
-Commons Attribution-ShareAlike 4.0
-International License.
-http://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="342.9" y="20.32" size="2.54" layer="94">http://25cmsquare.io</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="193.04" y="144.78"/>
