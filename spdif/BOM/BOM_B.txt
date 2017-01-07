@@ -1,0 +1,14 @@
+digikey: 
+
+1080-1433-ND             PLR135/T10          Fiber Optic Receiver General Data Transfer 16Mbps   1.45
+1080-1430-ND             PLT133/T10W       Fiber Optic Transmitter with Driver 660nm 16Mbps 1.03
+
+CP-1401-ND                RCJ-012               3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack                 0.75
+CP-1403-ND                RCJ-014               3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack                 0.75
+
+FIN1002M5XCT-ND      FIN1002M5X        0/1 Receiver LVDS SOT-23-5  0.45
+FIN1001M5XCT-ND      FIN1001M5X        1/0 Driver LVDS SOT-23-5   0.66
+
+NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
+
+811-3122-1-ND           DA101MC- R         DIGITAL AUDIO TX   0.96

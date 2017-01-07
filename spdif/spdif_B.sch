@@ -515,6 +515,16 @@
 <rectangle x1="74.676" y1="65.151" x2="75.184" y2="65.659" layer="51" rot="R90"/>
 <rectangle x1="77.216" y1="65.151" x2="77.724" y2="65.659" layer="51" rot="R90"/>
 </package>
+<package name="L0805">
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<smd name="1" x="-1.1" y="0" dx="1.3" dy="1.3" layer="1"/>
+<smd name="2" x="1.1" y="0" dx="1.3" dy="1.3" layer="1"/>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<text x="-2.104" y="1.004" size="1.016" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.112" y="-2.048" size="1.016" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FIN1002">
@@ -604,18 +614,6 @@
 <text x="-1.778" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="+2V5">
-<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+2V5" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="+1V0">
-<wire x1="1.27" y1="0.635" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+1V0" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="PLT133_T10W">
 <pin name="VCC" x="10.16" y="5.08" length="middle" direction="out" rot="R180"/>
@@ -772,6 +770,20 @@
 <pin name="UART1_RX" x="15.24" y="-7.62" length="middle" direction="pas" function="dot" rot="R180"/>
 <pin name="UART0_RX" x="15.24" y="-10.16" length="middle" direction="pas" function="dot" rot="R180"/>
 </symbol>
+<symbol name="L">
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94" curve="90"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-5.08" x2="1.27" y2="-3.81" width="0.254" layer="94" curve="90"/>
+<text x="-1.27" y="-5.08" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FIN1002" prefix="U">
@@ -860,30 +872,6 @@
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+2V5" prefix="+2V5">
-<gates>
-<gate name="G$1" symbol="+2V5" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+1V0">
-<gates>
-<gate name="A" symbol="+1V0" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1027,6 +1015,31 @@ FARNELL: 1702010</description>
 <connect gate="_PWR" pin="VCC7" pad="15"/>
 <connect gate="_PWR" pin="VCC8" pad="17"/>
 <connect gate="_PWR" pin="VCC9" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0805(2012)" package="L0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0603(1608)" package="L0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6810,12 +6823,6 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+5V">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -6835,19 +6842,6 @@ Source: AVX .. aphvc.pdf</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+3V3" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+5V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -7784,10 +7778,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="25cmsquare" deviceset="ZD" device="PESD0603-240" value="PESD0603-240"/>
-<part name="+2V1" library="25cmsquare" deviceset="+2V5" device=""/>
-<part name="U$1" library="25cmsquare" deviceset="+1V0" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="U6" library="25cmsquare" deviceset="FIN1002" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
@@ -7887,25 +7878,19 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="+3V21" library="supply1" deviceset="+3V3" device=""/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="100n, 0603"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
+<part name="TP16" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP17" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP18" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP19" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP20" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="C17" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
+<part name="FB3" library="25cmsquare" deviceset="L" device="0603(1608)"/>
+<part name="GND40" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="170.18" y="10.16" size="5.08" layer="94">16.11.22.B</text>
-<text x="266.7" y="134.62" size="1.778" layer="94">digikey: 
-
-1080-1433-ND             PLR135/T10          Fiber Optic Receiver General Data Transfer 16Mbps   1.45
-1080-1430-ND             PLT133/T10W       Fiber Optic Transmitter with Driver 660nm 16Mbps 1.03
-
-CP-1401-ND                RCJ-012               3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack                 0.75
-CP-1403-ND                RCJ-014               3.20mm ID, 9.00mm OD (RCA) Phono (RCA) Jack                 0.75
-
-FIN1002M5XCT-ND      FIN1002M5X        0/1 Receiver LVDS SOT-23-5  0.45
-FIN1001M5XCT-ND      FIN1001M5X        1/0 Driver LVDS SOT-23-5   0.66
-
-NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
-
-811-3122-1-ND           DA101MC- R         DIGITAL AUDIO TX   0.96</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -7970,17 +7955,8 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <attribute name="NAME" x="31.115" y="36.322" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="36.449" y="26.162" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="+2V1" gate="G$1" x="58.42" y="157.48" smashed="yes" rot="R270">
-<attribute name="VALUE" x="60.96" y="157.48" size="1.778" layer="96"/>
-</instance>
-<instance part="U$1" gate="A" x="50.8" y="154.94" smashed="yes" rot="R270">
-<attribute name="VALUE" x="53.34" y="154.94" size="1.778" layer="96"/>
-</instance>
-<instance part="+3V10" gate="G$1" x="53.34" y="160.02" smashed="yes" rot="R270">
-<attribute name="VALUE" x="53.34" y="160.02" size="1.778" layer="96"/>
-</instance>
-<instance part="P+1" gate="1" x="53.34" y="162.56" smashed="yes" rot="R270">
-<attribute name="VALUE" x="53.34" y="162.56" size="1.778" layer="96"/>
+<instance part="+3V10" gate="G$1" x="63.5" y="160.02" smashed="yes" rot="R270">
+<attribute name="VALUE" x="63.5" y="160.02" size="1.778" layer="96"/>
 </instance>
 <instance part="GND19" gate="1" x="7.62" y="154.94"/>
 <instance part="U6" gate="A" x="160.02" y="86.36" smashed="yes">
@@ -8026,7 +8002,7 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <instance part="GND34" gate="1" x="246.38" y="144.78" rot="MR0"/>
 <instance part="GND18" gate="1" x="170.18" y="127"/>
 <instance part="J1" gate="G$1" x="182.88" y="149.86"/>
-<instance part="U$2" gate="_PWR" x="25.4" y="154.94" rot="R180"/>
+<instance part="U$2" gate="_PWR" x="20.32" y="154.94" rot="R180"/>
 <instance part="U$2" gate="_IO" x="99.06" y="152.4" rot="R180"/>
 <instance part="U8" gate="G$1" x="203.2" y="86.36" smashed="yes">
 <attribute name="NAME" x="210.82" y="91.44" size="2.0828" layer="95" ratio="10" rot="SR0"/>
@@ -8050,6 +8026,16 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <instance part="TP4" gate="G$1" x="190.5" y="88.9"/>
 <instance part="TP14" gate="G$1" x="228.6" y="91.44"/>
 <instance part="TP15" gate="G$1" x="228.6" y="81.28" rot="R180"/>
+<instance part="TP17" gate="G$1" x="149.86" y="149.86" rot="R90"/>
+<instance part="TP18" gate="G$1" x="160.02" y="144.78" rot="R90"/>
+<instance part="TP19" gate="G$1" x="152.4" y="139.7" rot="R90"/>
+<instance part="TP20" gate="G$1" x="157.48" y="134.62" rot="R90"/>
+<instance part="C17" gate="G$1" x="58.42" y="152.4" rot="R180"/>
+<instance part="FB3" gate="G$1" x="48.26" y="160.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.72" y="163.83" size="1.778" layer="95"/>
+<attribute name="VALUE" x="53.34" y="163.83" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND40" gate="1" x="58.42" y="142.24"/>
 </instances>
 <busses>
 </busses>
@@ -8141,7 +8127,7 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <wire x1="246.38" y1="149.86" x2="246.38" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="15.24" y1="160.02" x2="7.62" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="160.02" x2="7.62" y2="160.02" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="7.62" y1="160.02" x2="7.62" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="_PWR" pin="GND8"/>
@@ -8186,6 +8172,11 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <wire x1="213.36" y1="99.06" x2="218.44" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+<wire x1="58.42" y1="144.78" x2="58.42" y2="149.86" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -8201,11 +8192,6 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="40.64" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="+3V4" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<wire x1="43.18" y1="160.02" x2="50.8" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="+3V10" gate="G$1" pin="+3V3"/>
-<pinref part="U$2" gate="_PWR" pin="VCC8"/>
 </segment>
 <segment>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
@@ -8239,6 +8225,15 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <wire x1="200.66" y1="99.06" x2="200.66" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="205.74" y1="99.06" x2="200.66" y2="99.06" width="0.1524" layer="91"/>
 <junction x="200.66" y="99.06"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="157.48" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="160.02" x2="60.96" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="FB3" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="160.02" x2="58.42" y2="160.02" width="0.1524" layer="91"/>
+<junction x="58.42" y="160.02"/>
+<pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="SPDIF0_IN" class="0">
@@ -8370,27 +8365,6 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <junction x="50.8" y="104.14"/>
 </segment>
 </net>
-<net name="+2V5" class="0">
-<segment>
-<pinref part="+2V1" gate="G$1" pin="+2V5"/>
-<wire x1="43.18" y1="157.48" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="_PWR" pin="VCC7"/>
-</segment>
-</net>
-<net name="+1V0" class="0">
-<segment>
-<wire x1="43.18" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="A" pin="+1V0"/>
-<pinref part="U$2" gate="_PWR" pin="VCC6"/>
-</segment>
-</net>
-<net name="+5V" class="0">
-<segment>
-<wire x1="43.18" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<pinref part="U$2" gate="_PWR" pin="VCC9"/>
-</segment>
-</net>
 <net name="U6_OUT" class="0">
 <segment>
 <pinref part="U6" gate="A" pin="ROUT"/>
@@ -8514,6 +8488,41 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <wire x1="195.58" y1="165.1" x2="187.96" y2="165.1" width="0.1524" layer="91"/>
 <label x="195.58" y="165.1" size="1.778" layer="95" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="3"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="TP17" gate="G$1" pin="TP"/>
+<pinref part="J1" gate="G$1" pin="10"/>
+<wire x1="152.4" y1="149.86" x2="175.26" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="TP18" gate="G$1" pin="TP"/>
+<pinref part="J1" gate="G$1" pin="13"/>
+<wire x1="162.56" y1="144.78" x2="175.26" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="TP19" gate="G$1" pin="TP"/>
+<pinref part="J1" gate="G$1" pin="16"/>
+<wire x1="154.94" y1="139.7" x2="175.26" y2="139.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="TP20" gate="G$1" pin="TP"/>
+<pinref part="J1" gate="G$1" pin="19"/>
+<wire x1="160.02" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="FB3" gate="G$1" pin="1"/>
+<wire x1="40.64" y1="160.02" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="_PWR" pin="VCC8"/>
 </segment>
 </net>
 </nets>
@@ -8673,6 +8682,7 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <attribute name="VALUE" x="14.859" y="113.284" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND39" gate="1" x="10.16" y="129.54" rot="R180"/>
+<instance part="TP16" gate="G$1" x="22.86" y="142.24"/>
 </instances>
 <busses>
 </busses>
@@ -9200,7 +9210,10 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 <pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="U1" gate="&gt;NAME" pin="D"/>
 <wire x1="20.32" y1="129.54" x2="20.32" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="139.7" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="TP16" gate="G$1" pin="TP"/>
+<wire x1="22.86" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
+<junction x="22.86" y="139.7"/>
 </segment>
 </net>
 </nets>
@@ -9208,10 +9221,4 @@ NC7SZ175P6XCT-ND    NC7SZ175P6X       IC D-TYPE POS TRG SNGL SC70-6  0.32
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
