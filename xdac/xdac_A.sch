@@ -9,6 +9,10 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -670,7 +674,7 @@ DIN A3, landscape with location and doc. field</description>
 </packages>
 <symbols>
 <symbol name="STA311B">
-<pin name="OUT_8B" x="20.32" y="25.4" length="middle" rot="R180"/>
+<pin name="OUT_8B" x="20.32" y="-12.7" length="middle" rot="R180"/>
 <pin name="MVO/DSD_CLK" x="-20.32" y="7.62" length="middle"/>
 <wire x1="-15.24" y1="27.94" x2="-15.24" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-33.02" x2="15.24" y2="-33.02" width="0.254" layer="94"/>
@@ -681,7 +685,7 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="-12.7" y1="33.02" x2="12.7" y2="33.02" width="0.254" layer="94"/>
 <wire x1="12.7" y1="33.02" x2="15.24" y2="30.48" width="0.254" layer="94"/>
 <wire x1="15.24" y1="30.48" x2="15.24" y2="27.94" width="0.254" layer="94"/>
-<pin name="OUT_8A" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="OUT_8A" x="20.32" y="-10.16" length="middle" rot="R180"/>
 <pin name="SDI_78/DSD_6" x="-20.32" y="12.7" length="middle"/>
 <text x="-12.7" y="34.29" size="1.27" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-35.56" size="1.27" layer="96">&gt;VALUE</text>
@@ -696,20 +700,20 @@ DIN A3, landscape with location and doc. field</description>
 <pin name="SCL" x="-20.32" y="-17.78" length="middle"/>
 <pin name="XTI" x="-20.32" y="-22.86" length="middle"/>
 <pin name="CKOUT" x="-20.32" y="-25.4" length="middle"/>
-<pin name="OUT_7B" x="20.32" y="20.32" length="middle" rot="R180"/>
-<pin name="OUT_7A" x="20.32" y="17.78" length="middle" rot="R180"/>
-<pin name="OUT_6B" x="20.32" y="15.24" length="middle" rot="R180"/>
-<pin name="OUT_6A" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="OUT_5B" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="OUT_5A" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="OUT_4B" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="OUT_4A" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="OUT_3B" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="OUT_3A" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="OUT_2B" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="OUT_2A" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="OUT_1B" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="OUT_1A" x="20.32" y="-12.7" length="middle" rot="R180"/>
+<pin name="OUT_7B" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="OUT_7A" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="OUT_6B" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="OUT_6A" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="OUT_5B" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="OUT_5A" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="OUT_4B" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="OUT_4A" x="20.32" y="10.16" length="middle" rot="R180"/>
+<pin name="OUT_3B" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="OUT_3A" x="20.32" y="15.24" length="middle" rot="R180"/>
+<pin name="OUT_2B" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="OUT_2A" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="OUT_1B" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="OUT_1A" x="20.32" y="25.4" length="middle" rot="R180"/>
 <pin name="BICKO" x="20.32" y="-17.78" length="middle" rot="R180"/>
 <pin name="LRCKO" x="20.32" y="-20.32" length="middle" rot="R180"/>
 <pin name="SDO_12" x="20.32" y="-22.86" length="middle" rot="R180"/>
