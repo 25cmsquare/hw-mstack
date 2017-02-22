@@ -2607,6 +2607,8 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <pin name="NC4" x="22.86" y="-20.32" length="middle" rot="R180"/>
 <pin name="NC5" x="22.86" y="-25.4" length="middle" rot="R180"/>
 <pin name="NC6" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<text x="-17.78" y="30.48" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="TLV702">
 <pin name="VIN" x="-12.7" y="5.08" length="middle"/>
