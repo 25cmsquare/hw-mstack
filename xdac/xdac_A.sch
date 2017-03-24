@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -6981,6 +6981,46 @@ Source: AVX .. aphvc.pdf</description>
 <rectangle x1="2.159" y1="-4.191" x2="2.921" y2="-3.429" layer="21"/>
 <rectangle x1="4.699" y1="-4.191" x2="5.461" y2="-3.429" layer="21"/>
 </package>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-0.3302" y1="0.9652" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.3302" y2="-0.9652" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.2098" y1="0.9398" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-2.2098" y2="-0.9906" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.3302" y2="0.9652" width="0.1524" layer="21"/>
+<wire x1="2.2098" y1="0.9652" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="2.2098" y2="-0.9652" width="0.1524" layer="21"/>
+<wire x1="0.3302" y1="-0.9652" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PINHD3">
@@ -7079,6 +7119,16 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="0" y1="14.224" x2="0" y2="16.256" width="0.1524" layer="94"/>
 <wire x1="0" y1="16.256" x2="-2.032" y2="16.256" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="PINHD-1X3" prefix="JP" uservalue="yes">
@@ -7154,6 +7204,32 @@ Source: AVX .. aphvc.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -7173,17 +7249,17 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="25cmsquare" deviceset="C-POL" device="_B" value="1u, EEEFC1V1R0AR"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="+2V1" library="25cmsquare" deviceset="+2V5" device=""/>
-<part name="C5" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
+<part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603K" value="100n"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="25cmsquare" deviceset="C-POL" device="_B" value="1u, EEEFC1V1R0AR"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="C10" library="25cmsquare" deviceset="C-POL" device="_E" value="47u, EEEFC1V470P"/>
+<part name="C10" library="25cmsquare" deviceset="C-POL" device="_C" value="47u, EEEFC0J470R"/>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -7278,6 +7354,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="J2" library="25pinhead" deviceset="PINHD-3X5" device="/90"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
 <part name="J3" library="25pinhead" deviceset="PINHD-3X5" device="/90"/>
+<part name="JP1" library="25pinhead" deviceset="PINHD-1X2" device="/90"/>
+<part name="JP3" library="25pinhead" deviceset="PINHD-1X2" device="/90"/>
+<part name="GND40" library="supply1" deviceset="GND" device=""/>
+<part name="GND41" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7482,6 +7562,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="J2" gate="G$1" x="200.66" y="223.52"/>
 <instance part="GND39" gate="1" x="193.04" y="208.28"/>
 <instance part="J3" gate="G$1" x="248.92" y="223.52"/>
+<instance part="JP1" gate="G$1" x="264.16" y="203.2" rot="R180"/>
+<instance part="JP3" gate="G$1" x="264.16" y="185.42" rot="R180"/>
+<instance part="GND40" gate="1" x="274.32" y="195.58"/>
+<instance part="GND41" gate="1" x="274.32" y="177.8"/>
 </instances>
 <busses>
 </busses>
@@ -7951,6 +8035,18 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="J2" gate="G$1" pin="14"/>
 <wire x1="195.58" y1="215.9" x2="193.04" y2="215.9" width="0.1524" layer="91"/>
 <junction x="193.04" y="215.9"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="200.66" x2="274.32" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="200.66" x2="274.32" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="266.7" y1="182.88" x2="274.32" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="182.88" x2="274.32" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="GND41" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+2V5" class="0">
@@ -8501,9 +8597,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="185.42" y="162.56" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="195.58" y1="218.44" x2="190.5" y2="218.44" width="0.1524" layer="91"/>
-<label x="190.5" y="218.44" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="13"/>
+<wire x1="266.7" y1="185.42" x2="274.32" y2="185.42" width="0.1524" layer="91"/>
+<label x="274.32" y="185.42" size="1.778" layer="95" xref="yes"/>
+<pinref part="JP3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="MUTEC_234" class="0">
@@ -8513,9 +8609,9 @@ Source: AVX .. aphvc.pdf</description>
 <label x="200.66" y="160.02" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="256.54" y1="218.44" x2="261.62" y2="218.44" width="0.1524" layer="91"/>
-<label x="261.62" y="218.44" size="1.778" layer="95" xref="yes"/>
-<pinref part="J3" gate="G$1" pin="15"/>
+<wire x1="266.7" y1="203.2" x2="274.32" y2="203.2" width="0.1524" layer="91"/>
+<label x="274.32" y="203.2" size="1.778" layer="95" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
