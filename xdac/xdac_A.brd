@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -136,6 +136,10 @@
 </layers>
 <board>
 <plain>
+<text x="16.6624" y="77.1652" size="2.032" layer="25" font="vector" ratio="15" align="bottom-center">17.03.27.A</text>
+<text x="64.9224" y="74.1172" size="1.016" layer="25" font="vector" ratio="15" align="bottom-center">GND</text>
+<text x="64.9224" y="4.5212" size="1.016" layer="25" font="vector" ratio="15" align="bottom-center">GND</text>
+<text x="17.4244" y="4.5212" size="1.016" layer="25" font="vector" ratio="15" align="bottom-center">GND</text>
 </plain>
 <libraries>
 <library name="25cmsquare">
@@ -1802,6 +1806,21 @@ Metric Code Size 1608</description>
 </package>
 </packages>
 </library>
+<library name="testpad">
+<description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
+Cream on SMD OFF.&lt;br&gt;
+new: Attribute TP_SIGNAL_NAME&lt;br&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="TP14R">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<smd name="TP" x="0" y="0" dx="1.4" dy="1.4" layer="1" roundness="100" cream="no"/>
+<text x="-0.7" y="0.7501" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="0" y="-2.54" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2259,6 +2278,18 @@ design rules under a new name.</description>
 <element name="U$4" library="25cmsquare" package="TEST_1MM" value="TEST-22-MULTICOMP" x="61.4934" y="74.5998" smashed="yes"/>
 <element name="U$5" library="25cmsquare" package="TEST_1MM" value="TEST-22-MULTICOMP" x="13.589" y="5.1562" smashed="yes"/>
 <element name="U$6" library="25cmsquare" package="TEST_1MM" value="TEST-22-MULTICOMP" x="21.082" y="5.1562" smashed="yes"/>
+<element name="2V5" library="testpad" package="TP14R" value="TPTP14R" x="20.1676" y="34.2138" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="20.1676" y="31.6738" size="1" layer="37"/>
+<attribute name="NAME" x="21.144" y="33.7955" size="1.016" layer="25" font="vector" ratio="15"/>
+</element>
+<element name="3V3" library="testpad" package="TP14R" value="TPTP14R" x="16.0782" y="15.113" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="16.0782" y="12.573" size="1" layer="37"/>
+<attribute name="NAME" x="14.7432" y="13.1199" size="1.016" layer="25" font="vector" ratio="15"/>
+</element>
+<element name="+5V" library="testpad" package="TP14R" value="TPTP14R" x="9.4742" y="42.4434" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="9.4742" y="39.9034" size="1" layer="37"/>
+<attribute name="NAME" x="8.2916" y="43.3205" size="1.016" layer="25" font="vector" ratio="15"/>
+</element>
 </elements>
 <signals>
 <signal name="SCLK">
@@ -2481,12 +2512,14 @@ design rules under a new name.</description>
 <wire x1="27.0764" y1="29.8822" x2="27.0764" y2="31.9024" width="0.1524" layer="1"/>
 <wire x1="25.6794" y1="17.907" x2="26.1366" y2="18.3642" width="0.1524" layer="1"/>
 <wire x1="25.6794" y1="17.907" x2="25.6794" y2="15.494" width="0.1524" layer="1"/>
-<wire x1="26.1366" y1="29.7434" x2="26.289" y2="29.8958" width="0.1524" layer="1"/>
-<wire x1="26.289" y1="29.8958" x2="27.0628" y2="29.8958" width="0.1524" layer="1"/>
+<wire x1="26.0858" y1="29.8958" x2="27.0628" y2="29.8958" width="0.1524" layer="1"/>
 <wire x1="27.0628" y1="29.8958" x2="27.0764" y2="29.8822" width="0.1524" layer="1"/>
-<wire x1="26.1366" y1="18.3642" x2="26.1366" y2="29.7434" width="0.1524" layer="1"/>
+<wire x1="26.1366" y1="18.3642" x2="26.1366" y2="26.6954" width="0.1524" layer="1"/>
 <wire x1="32.5284" y1="40.25" x2="27.0764" y2="34.798" width="0.1524" layer="1"/>
 <wire x1="35.75" y1="40.25" x2="32.5284" y2="40.25" width="0.1524" layer="1"/>
+<wire x1="26.1366" y1="26.6954" x2="25.908" y2="26.924" width="0.1524" layer="1"/>
+<wire x1="25.908" y1="26.924" x2="25.908" y2="29.718" width="0.1524" layer="1"/>
+<wire x1="25.908" y1="29.718" x2="26.0858" y2="29.8958" width="0.1524" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="C2" pad="2"/>
@@ -2665,13 +2698,17 @@ design rules under a new name.</description>
 <wire x1="3.8354" y1="35.3822" x2="3.8508" y2="35.3976" width="0.6096" layer="1"/>
 <wire x1="3.8508" y1="35.3976" x2="3.8508" y2="35.4200125" width="0.6096" layer="1"/>
 <wire x1="3.8508" y1="35.4200125" x2="4.6257875" y2="36.195" width="0.6096" layer="1"/>
-<wire x1="4.6257875" y1="36.195" x2="22.5044" y2="36.195" width="0.6096" layer="1"/>
+<wire x1="4.6257875" y1="36.195" x2="20.1422" y2="36.195" width="0.6096" layer="1"/>
+<wire x1="20.1422" y1="36.195" x2="22.5044" y2="36.195" width="0.6096" layer="1"/>
 <wire x1="22.5044" y1="36.195" x2="23.0124" y2="36.703" width="0.6096" layer="1"/>
 <wire x1="23.0124" y1="36.703" x2="23.0124" y2="42.926" width="0.6096" layer="1"/>
 <via x="23.0124" y="42.926" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="23.0124" y1="42.926" x2="26.0858" y2="42.926" width="0.6096" layer="16"/>
 <via x="26.0858" y="42.926" extent="1-16" drill="0.6" shape="square"/>
 <wire x1="28.5242" y1="42.926" x2="26.0858" y2="42.926" width="0.6096" layer="1"/>
+<contactref element="2V5" pad="TP"/>
+<wire x1="20.1676" y1="34.2138" x2="20.1422" y2="34.2138" width="0.1524" layer="1"/>
+<wire x1="20.1422" y1="34.2138" x2="20.1422" y2="36.195" width="0.1524" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="J1" pad="19"/>
@@ -2679,10 +2716,14 @@ design rules under a new name.</description>
 <contactref element="FB1" pad="2"/>
 <wire x1="11.176" y1="40.8038" x2="11.1746" y2="40.8078" width="0.2032" layer="1"/>
 <wire x1="11.176" y1="40.8038" x2="11.152" y2="40.7824" width="0.6096" layer="1"/>
-<wire x1="11.152" y1="40.7824" x2="8.3974" y2="40.7824" width="0.6096" layer="1"/>
+<wire x1="11.152" y1="40.7824" x2="9.4488" y2="40.7824" width="0.6096" layer="1"/>
+<wire x1="9.4488" y1="40.7824" x2="8.3974" y2="40.7824" width="0.6096" layer="1"/>
 <wire x1="8.3974" y1="40.7824" x2="5.07" y2="37.455" width="0.6096" layer="1"/>
 <wire x1="12.7128" y1="40.8178" x2="11.19" y2="40.8178" width="0.6096" layer="1"/>
 <wire x1="11.19" y1="40.8178" x2="11.176" y2="40.8038" width="0.6096" layer="1"/>
+<contactref element="+5V" pad="TP"/>
+<wire x1="9.4742" y1="42.4434" x2="9.4488" y2="42.4434" width="0.1524" layer="1"/>
+<wire x1="9.4488" y1="42.4434" x2="9.4488" y2="40.7824" width="0.1524" layer="1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="J1" pad="17"/>
@@ -2698,7 +2739,8 @@ design rules under a new name.</description>
 <wire x1="10.0584" y1="31.75" x2="6.8934" y2="34.915" width="0.6096" layer="1"/>
 <wire x1="13.424" y1="31.7754" x2="11.4046" y2="31.7754" width="0.6096" layer="1"/>
 <wire x1="11.4046" y1="17.653" x2="12.3952" y2="16.6624" width="0.6096" layer="1"/>
-<wire x1="12.3952" y1="16.6624" x2="19.8882" y2="16.6624" width="0.6096" layer="1"/>
+<wire x1="12.3952" y1="16.6624" x2="16.0782" y2="16.6624" width="0.6096" layer="1"/>
+<wire x1="16.0782" y1="16.6624" x2="19.8882" y2="16.6624" width="0.6096" layer="1"/>
 <wire x1="22.7838" y1="24.4738" x2="22.7584" y2="24.4484" width="0.6096" layer="1"/>
 <wire x1="11.4046" y1="31.7754" x2="11.4046" y2="17.653" width="0.6096" layer="1"/>
 <wire x1="22.7838" y1="24.4738" x2="24.4738" y2="24.4738" width="0.3048" layer="1"/>
@@ -2707,6 +2749,8 @@ design rules under a new name.</description>
 <wire x1="19.8882" y1="22.7584" x2="21.59" y2="24.4602" width="0.6096" layer="1"/>
 <wire x1="21.59" y1="24.4602" x2="22.7702" y2="24.4602" width="0.6096" layer="1"/>
 <wire x1="22.7702" y1="24.4602" x2="22.7838" y2="24.4738" width="0.6096" layer="1"/>
+<contactref element="3V3" pad="TP"/>
+<wire x1="16.0782" y1="15.113" x2="16.0782" y2="16.6624" width="0.1524" layer="1"/>
 </signal>
 <signal name="VQ">
 <contactref element="U2" pad="21"/>
