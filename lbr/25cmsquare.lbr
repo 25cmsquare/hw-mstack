@@ -1572,12 +1572,8 @@ http://www.hirose.co.jp/cataloge_hp/ed_ZX_20140804.pdf</description>
 <wire x1="77" y1="80" x2="3" y2="80" width="0" layer="20"/>
 <wire x1="0" y1="77" x2="0" y2="3" width="0" layer="20"/>
 <wire x1="0" y1="3" x2="3" y2="0" width="0" layer="20"/>
-<hole x="34" y="19" drill="3.2"/>
-<circle x="33.9952" y="19.0048" radius="3" width="0.254" layer="21"/>
 <wire x1="77" y1="0" x2="80" y2="3" width="0" layer="20"/>
 <wire x1="0" y1="77" x2="3" y2="80" width="0" layer="20"/>
-<hole x="34" y="61" drill="3.2"/>
-<circle x="33.9952" y="61.0048" radius="3" width="0.254" layer="21"/>
 <wire x1="77" y1="80" x2="80" y2="77" width="0" layer="20"/>
 <wire x1="2.5" y1="71.51" x2="2.5" y2="8.49" width="0" layer="48"/>
 <wire x1="8.49" y1="77.5" x2="71.51" y2="77.5" width="0" layer="48"/>
