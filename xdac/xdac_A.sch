@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7993,8 +7993,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C11" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1V220P"/>
-<part name="C12" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1V220P"/>
+<part name="C11" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1C220R"/>
+<part name="C12" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1C220R"/>
 <part name="C19" library="rcl" deviceset="C-EU" device="C0603" value="2n2"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="C20" library="rcl" deviceset="C-EU" device="C0603" value="2n2"/>
@@ -8007,8 +8007,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="C13" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1V220P"/>
-<part name="C14" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1V220P"/>
+<part name="C13" library="25cmsquare" deviceset="C-POL" device="_C" value="22u,EEEFC1C220R"/>
+<part name="C14" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1C220R"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="2n2"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0603" value="2n2"/>
@@ -8021,8 +8021,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="C17" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1V220P"/>
-<part name="C18" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1V220P"/>
+<part name="C17" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1C220R"/>
+<part name="C18" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1C220R"/>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0603" value="2n2"/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="2n2"/>
@@ -8035,8 +8035,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
-<part name="C23" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1V220P"/>
-<part name="C24" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1V220P"/>
+<part name="C23" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1C220R"/>
+<part name="C24" library="25cmsquare" deviceset="C-POL" device="_C" value="22u, EEEFC1C220R"/>
 <part name="C25" library="rcl" deviceset="C-EU" device="C0603" value="2n2"/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="C26" library="rcl" deviceset="C-EU" device="C0603" value="2n2"/>

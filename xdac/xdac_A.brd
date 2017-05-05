@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2046,16 +2046,16 @@ design rules under a new name.</description>
 <element name="C10" library="25cmsquare" package="EEE-FC1C220R" value="47u, EEEFC0J470R" x="40.4876" y="26.5176" smashed="yes" rot="R270">
 <attribute name="NAME" x="41.1988" y="22.2504" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
-<element name="C11" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1V220P" x="61.468" y="66.929" smashed="yes">
+<element name="C11" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1C220R" x="61.468" y="66.929" smashed="yes">
 <attribute name="NAME" x="60.6298" y="69.8754" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
-<element name="C12" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1V220P" x="61.468" y="61.087" smashed="yes">
+<element name="C12" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1C220R" x="61.468" y="61.087" smashed="yes">
 <attribute name="NAME" x="60.6044" y="57.1246" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
-<element name="C13" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1V220P" x="61.468" y="50.927" smashed="yes">
+<element name="C13" library="25cmsquare" package="EEE-FC1C220R" value="22u,EEEFC1C220R" x="61.468" y="50.927" smashed="yes">
 <attribute name="NAME" x="60.4774" y="53.8226" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
-<element name="C14" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1V220P" x="61.468" y="45.085" smashed="yes">
+<element name="C14" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1C220R" x="61.468" y="45.085" smashed="yes">
 <attribute name="NAME" x="60.4774" y="41.1988" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
 <element name="C15" library="rcl" package="C0603" value="2n2" x="72.7964" y="55.0164" smashed="yes" rot="R180">
@@ -2064,10 +2064,10 @@ design rules under a new name.</description>
 <element name="C16" library="rcl" package="C0603" value="2n2" x="72.7964" y="41.021" smashed="yes" rot="R180">
 <attribute name="NAME" x="68.4784" y="40.513" size="1.016" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C17" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1V220P" x="61.468" y="34.925" smashed="yes">
+<element name="C17" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1C220R" x="61.468" y="34.925" smashed="yes">
 <attribute name="NAME" x="60.3504" y="37.8206" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
-<element name="C18" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1V220P" x="61.468" y="29.083" smashed="yes">
+<element name="C18" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1C220R" x="61.468" y="29.083" smashed="yes">
 <attribute name="NAME" x="60.6044" y="25.1206" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
 <element name="C19" library="rcl" package="C0603" value="2n2" x="72.8218" y="70.993" smashed="yes" rot="R180">
@@ -2085,10 +2085,10 @@ design rules under a new name.</description>
 <element name="C22" library="rcl" package="C0603" value="2n2" x="72.8218" y="25.019" smashed="yes" rot="R180">
 <attribute name="NAME" x="68.6054" y="24.511" size="1.016" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="C23" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1V220P" x="61.468" y="18.923" smashed="yes">
+<element name="C23" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1C220R" x="61.468" y="18.923" smashed="yes">
 <attribute name="NAME" x="60.706" y="21.7678" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
-<element name="C24" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1V220P" x="61.468" y="13.081" smashed="yes">
+<element name="C24" library="25cmsquare" package="EEE-FC1C220R" value="22u, EEEFC1C220R" x="61.468" y="13.081" smashed="yes">
 <attribute name="NAME" x="60.6806" y="9.1948" size="1.016" layer="25" font="vector" ratio="15" rot="SR0"/>
 </element>
 <element name="C25" library="rcl" package="C0603" value="2n2" x="72.8218" y="22.987" smashed="yes" rot="R180">
