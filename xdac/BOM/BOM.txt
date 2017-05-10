@@ -1,0 +1,9 @@
+10x 2627457, SMD Multilayer Ceramic Capacitor, 4.7uF, 0.0305
+10x 1759398, SMD Multilayer Ceramic Capacitor, 1uF, 0.0127
+10x 2320817, SMD Multilayer Ceramic Capacitor, 2.2uF, 0.0211
+5x  1244367, SMD Aluminium Electrolytic Capacitor, Radial Can - SMD, 1 µF, 35 V, 0.205
+5x  9694323, SMD Aluminium Electrolytic Capacitor, Radial Can - SMD, 47 µF, 6.3 V, 0.248
+10x 9694366, SMD Aluminium Electrolytic Capacitor, Radial Can - SMD, 22uF, 16V, 0.24
+10x 1759093, SMD Multilayer Ceramic Capacitor, 2200pF, 0.0059
+10x 1809710, SMD Chip Resistor, Thin Film, 562 ohm, 0.305
+4x FC68131, Phone Audio Connector, 3 Contacts, Jack, 3.5 mm, 0.426
