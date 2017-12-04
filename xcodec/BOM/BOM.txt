@@ -1,0 +1,10 @@
+10 x 1467290 FIN1002M5X - LVDS Driver, Differential Receiver, 1 ns, 7 mA 0.39
+10 x 2357339 EEEFC1V1R0R - SMD Aluminium Electrolytic Capacitor, Radial Can - SMD, 1 µF, 35 V 0.257
+10 x 9693491 EEEFC1C100R - SMD Aluminium Electrolytic Capacitor, Radial Can - SMD, 10 µF, 16 V 0.186
+5  x 9694331 EEEFC0J101P - SMD Aluminium Electrolytic Capacitor, Radial Can - SMD, 100 µF, 6.3 V 0.249
+5  x 9694455 EEEFC1V4R7R - SMD Aluminium Electrolytic Capacitor, Radial Can - SMD, 4.7 µF, 35 V 0.192
+20 x 1414609 C0603C103K5RACTU - SMD Multilayer Ceramic Capacitor, 0603 [1608 Metric], 0.01 µF, 50 V 0.0165 
+10 x 1515679 BLM18AG601SN1D - Ferrite Bead, 600 ohm, 0603 [1608 Metric], BLM18A Series, 500 mA 0.0423
+10 x 317202 06035A102JAT2A - SMD Multilayer Ceramic Capacitor, 0603 [1608 Metric], 1000 pF, 50 V 0.0259
+10 x 2496847 0603B223K500CT - SMD Multilayer Ceramic Capacitor, 0603 [1608 Metric], 0.022 µF, 50 V 0.0155
+30 x 2496834 0603B104K500CT - SMD Multilayer Ceramic Capacitor, 0603 [1608 Metric], 0.1 µF, 50 V 0.0127
